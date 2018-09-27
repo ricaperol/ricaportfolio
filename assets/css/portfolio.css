@@ -119,12 +119,16 @@ iframe{
     overflow:hidden;
 }
 
-a iframe{
+a {
 	text-decoration: none;
 	border: none;
 }
 
 a:hover{
+	text-decoration: none;
+}
+
+a:active{
 	text-decoration: none;
 }
 
@@ -168,7 +172,9 @@ a:hover{
 }
 
 
-
+.text-center{
+	color: rgb(56, 12, 26);
+}
 
 
 

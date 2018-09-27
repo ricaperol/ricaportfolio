@@ -1,0 +1,228 @@
+body{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: 'Patua One', cursive;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #380C1A;
+}
+
+.image1, .image2, .image3, .image4{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	background-attachment: fixed;  /*fixed=means parallax effect; scroll=means normal*/
+}
+
+.fadeInLeft{
+	animation-delay: 1s;
+}
+
+.fadeInRight{
+	animation-delay: 1s;
+}
+
+.animated{
+	font-size: 50px;
+	font-family: 'Patua One', cursive;
+}
+
+
+.image1{
+	background-image: url('../images/office.jpeg');
+	min-height: 100vh;
+}
+
+.image2{
+	background-image: url('../images/tagaytay.jpg');
+	min-height: 400px;
+}
+
+.image3{
+	background-image: url('../images/mermaid.jpeg');
+	min-height: 400px;
+}
+
+.image4{
+	background-image: url('../images/thankyou.jpeg');
+	min-height: 100vh;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+
+.section-light{
+	background-color: #FAC4D2;
+	color: #380C1A;
+}
+
+.section-dark{
+	background-color: lightblue;
+	color: #380C1A;
+}
+
+.text{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	color: #380C1A;
+	font-size: 30px;
+	letter-spacing: 8px;
+	/*text-transform: uppercase;*/
+}
+
+
+#icon {
+	max-width: 170px;
+	margin: auto;
+}
+
+.border{
+	background-color: transparent;
+	color: #380C1A;
+	font-size: 80px;
+	font-style: bold;
+	padding: 10px;
+}
+
+.border.trans{
+	background-color: transparent;
+}
+
+footer{
+	width: 100%;
+	background-color: #f18897;
+	padding: 5px 5px;
+	font-family: 'Patua One', cursive;
+	color: #fff;
+	text-align: center;
+}
+
+footer a {
+	color:black;
+	padding-right: 10px;
+}
+
+footer .follow-us {
+	margin-top:20px;
+	margin-bottom: 10px;
+}
+
+iframe{
+    overflow:hidden;
+}
+
+a iframe{
+	text-decoration: none;
+	border: none;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 900px) {
+	.image1, .image2, .image3, .image4{
+		background-attachment: scroll;
+	}
+	#icon {
+		max-width: 100px;
+	}
+	.title{
+		font-size: 30px;
+		letter-spacing: 0;
+	}
+	.border{
+		font-size: 30px;
+	}
+}
+
+
+
+@media (max-width: 568px){
+	.image1, .image2, .image3, .image4{
+		background-attachment: scroll;
+	}
+	#icon {
+		max-width: 100px;
+	}
+	.title{
+		font-size: 20px;
+		letter-spacing: 0;
+	}
+	.border{
+		font-size: 30px;
+	}
+	.credit{
+		font-size: 10px;
+	}
+	.text-center{
+		font-size: 35px;
+	}
+}
+
